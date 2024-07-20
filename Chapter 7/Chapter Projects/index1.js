@@ -1,5 +1,5 @@
 "use strict";
-
+//Employee tracking app
 class Employee {
   constructor(first, last, years) {
     this.first = first;
@@ -7,8 +7,8 @@ class Employee {
     this.years = years;
   }
 }
-let person1 = new Employee("Laurence", "Svekis", 10);
-let person2 = new Employee("Jane", "Doe", 5);
+let person1 = new Employee("Michael", "Jordan", 12);
+let person2 = new Employee("Michael", "Jackson", 8);
 let workers = [person1, person2];
 
 Employee.prototype.details = function () {

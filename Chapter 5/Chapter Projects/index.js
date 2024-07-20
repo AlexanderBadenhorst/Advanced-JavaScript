@@ -4,7 +4,7 @@
 let multiTable = [];
 let val1 = 13;
 for (let i = 0; i < val1; i++) {
-  const temp = [];
+  let temp = [];
   for (let j = 0; j < val1; j++) {
     temp.push(i * j);
   }

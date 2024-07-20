@@ -1,15 +1,20 @@
 "use strict";
+//Set timeout order
+const one  = ()=> console.log('1. one'); 
+const two  = ()=> console.log('2. two'); 
+// one();
+// two();
 
-let one  = ()=> console.log('one'); 
-let two  = ()=> console.log('two'); 
-let three = () =>{
-    console.log('three'); 
+const three = () =>{
+    console.log('3. three'); 
     one(); 
     two(); 
-}
-let four = () =>{
-    console.log('four');  
-    setTimeout(one,0); 
+};
+// three();
+
+const four = () =>{
+    console.log('4. four');  
+    setTimeout(one,1000); 
     three();
-}
+};
 four();
