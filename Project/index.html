@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chatbot in JavaScript | CodingNepal</title>
+    <title>User Database and Chatbot</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts Link For Icons -->
@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -37,21 +37,39 @@
         </div>
     </div>
     <div>
-        <h1>Hello World</h1>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Eemail</th>
-                <th>Username</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>John Doe</td>
-                <td>John Doe</td>
-                <td>John Doe</td>
-            </tr>
+        <h1>User Database</h1>
+        <!-- Add a form to add new users -->
+        <form id="add-user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Add User">
+        </form>
+
+        <!-- Add a button to remove users -->
+        <button id="remove-user-btn">Remove User</button>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- data will be appended here -->
+            </tbody>
         </table>
+        </tr>
+        </table>
+
+
     </div>
 </body>
 
