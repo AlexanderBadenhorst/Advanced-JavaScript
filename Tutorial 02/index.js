@@ -1,6 +1,6 @@
 "use strict";
 
-//example of synchronus programming
+   //example of synchronus programming
 // Define three functions
 // function firstTask() {
 //     console.log("Task 1");
@@ -19,7 +19,8 @@
 //   secondTask();
 //   thirdTask();
 
-//example 2
+
+   //example 2
 // function someLongRunningFunction() {
 //   let start = Date.now();
 //   while (Date.now() - start < 5000) {
@@ -35,7 +36,8 @@
 
 // console.log("...Finishing");
 
-//example 3
+
+   //example 3
 // console.log("Start of script");
 
 // setTimeout(function () {
@@ -44,7 +46,8 @@
 
 // console.log("End of script");
 
-//example 4
+
+   //example 4
 // Declare function
 // function fetchData(callback) {
 //   setTimeout(() => {
@@ -60,7 +63,8 @@
 
 // console.log("Data is being fetched...");
 
-//example 5: callback hell (the dorito of doom)
+
+   //example 5: callback hell (the dorito of doom)
 // getData(function (a) {
 //   getMoreData(a, function (b) {
 //     getEvenMoreData(b, function (c) {
@@ -73,12 +77,14 @@
 //   });
 // });
 
-//example 6: promises
-// Initialize a promise
-// const myPromise = new Promise(function(resolve, reject) {}); //arrow opperator unnecessary
+
+   //example 6: promises
+//Initialize a promise
+//const myPromise = new Promise(function(resolve, reject) {}); //arrow opperator unnecessary
 // console.log(myPromise);
 
-//example 7: promise that resolves and logs a string after 2 seconds
+
+   //example 7: promise that resolves and logs a string after 2 seconds
 // const myPromise = new Promise((resolve, reject) => {
 //   setTimeout(() => {
 //     resolve("Hello from the promise!");
@@ -86,7 +92,8 @@
 // });
 // console.log(myPromise);
 
-//consuming a promise
+
+   //consuming a promise
 //example 8:
 // myPromise
 // .then((result) => {
@@ -108,7 +115,8 @@
 //     //of a promise (fulfilled or rejected)
 //   });
 
-//chaining promises
+
+   //chaining promises
 // fetch("https://example.com/data")
 //   .then((response) => response.json())
 //   .then((data) => processData(data))
@@ -117,7 +125,8 @@
 //   })
 //   .catch((error) => console.log(error));
 
-//error handling
+
+   //error handling
 // fetch("https://api.github.com/users/octocat")
 //   .then((response) => response.json())
 //   .then((data) => {
@@ -130,7 +139,7 @@
 //   })
 //   .catch((error) => console.log(error));
 
-//promise.all
+// promise.all
 // let promise1 = fetch("https://jsonplaceholder.typicode.com/posts/1");
 // let promise2 = fetch("https://jsonplaceholder.typicode.com/posts/2");
 // let promise3 = fetch("https://jsonplaceholder.typicode.com/posts/3");
@@ -139,7 +148,8 @@
 //   console.log(values);
 // });
 
-//how to fetch API with promises
+
+   //how to fetch API with promises
 // fetch('https://some-api.com/data')
 //   .then(response => response.json())
 //   .then(data => {
@@ -149,7 +159,8 @@
 //     console.error('Error:', error);
 //   });
 
-//async/await
+
+   //async/await
 // async function getData() {
 //   const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
 //   const data = await response.json();
